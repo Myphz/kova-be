@@ -1,7 +1,7 @@
 import cors from "cors";
 import express from "express";
 import { errorHandler } from "./middlewares/error.js";
-import { TestAPI } from "./routes/test.js";
+import { AiAPI } from "./routes/ai.js";
 
 const app = express();
 const PORT = process.env.PORT ? Number.parseInt(process.env.PORT) : 3000;
@@ -20,13 +20,13 @@ app.use(
       "http://localhost",
       "https://localhost",
       "capacitor://localhost",
-      "https://voyalog",
-      "http://voyalog"
+      "https://kova",
+      "http://kova"
     ]
   })
 );
 
-app.use("/", TestAPI);
+app.use("/", AiAPI);
 
 app.use(errorHandler);
 

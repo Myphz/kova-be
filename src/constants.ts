@@ -12,3 +12,5 @@ const getEnvValue = (varName: string) => {
 
 export const TELEGRAM_API_KEY = getEnvValue("TELEGRAM_API_KEY");
 export const TELEGRAM_CHAT_ID = "644102713";
+
+export const OPENAI_API_KEY = getEnvValue("OPENAI_API_KEY");
