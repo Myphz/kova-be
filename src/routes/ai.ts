@@ -17,7 +17,7 @@ AiAPI.post(
   "/generate-description",
   withQuestParam,
   asyncHandler(async (req, res) => {
-    const quest = paramsSchema.parse(req.query);
+    const quest = paramsSchema.parse(req.body);
     const description = await getAIResponse({ prompt: JSON.stringify(quest) });
     res.json({ description });
   })
