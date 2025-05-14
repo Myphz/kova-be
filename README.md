@@ -29,4 +29,5 @@ This is a simple Express template with some libraries already installed and conf
 - Change Github Action branch name in `.github/workflows/fly.yml`
 - Set app name in `fly.toml` file
 - Deploy the app with `fly launch`
+- Set `.env` vars as fly secrets using `fly secrets set NAME=VALUE`
 - Create fly.io token with `fly tokens create deploy -x 999999h` and set it as Github actions secret, named `FLY_API_TOKEN`

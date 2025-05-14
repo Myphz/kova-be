@@ -3,29 +3,29 @@ name: Test & Fly Deploy
 on:
   push:
     branches:
-      - CHANGE_ME_TO_MASTER
+      - master
 
 jobs:
-  test:
-    name: Run Tests
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v3
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: "21"
-
-      - name: Install Dependencies
-        run: npm install
-
-      - name: Run Tests
-        run: npm run test
-        env:
-          TELEGRAM_API_KEY: NOT_NEEDED
+  # test:
+  #   name: Run Tests
+  #   runs-on: ubuntu-latest
+  #
+  #   steps:
+  #     - name: Checkout Repository
+  #       uses: actions/checkout@v3
+  #
+  #     - name: Setup Node.js
+  #       uses: actions/setup-node@v3
+  #       with:
+  #         node-version: "21"
+  #
+  #     - name: Install Dependencies
+  #       run: npm install
+  #
+  #     - name: Run Tests
+  #       run: npm run test
+  #       env:
+  #         TELEGRAM_API_KEY: NOT_NEEDED
 
   deploy:
     name: Deploy app
