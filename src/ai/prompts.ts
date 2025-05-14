@@ -12,6 +12,7 @@ It must:
 - Be **cyberpunk-themed** (gritty, over-the-top, dramatic, maybe sarcastic)
 - Sound like it belongs in a high-stakes, edgy mission
 - Avoid full sentences or complex phrasing
+- Use the same language as the quest JSON data.
 
 Given the quest title and description in JSON format, reply with **just the quest description**. Nothing else.
 `;
